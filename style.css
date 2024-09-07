@@ -127,7 +127,7 @@ header {
   background-position: center;
 
   .row:first-child {
-    height: 704px;
+    min-height: 704px;
     padding: 124px 0;
     display: flex;
     justify-content: space-between;
@@ -180,18 +180,31 @@ header {
 
   .row:last-child {
     height: 306px;
+    min-height: 306px;
+    background-color: #333;
 
     .features {
       height: 100%;
       display: flex;
       justify-content: space-between;
       align-items: center;
-
+      background-image: url("images/vector/Line.svg");
+      background-repeat: no-repeat;
+      background-position: center 38px;
+      background-size: 65%;
+      
       li {
         width: 424px;
         text-align: center;
+        font-size: 36px;
+        line-height: 40px;
 
         img {
+          background-color: #333;
+          object-fit: none;
+          border-radius: 50%;
+          width: 96px;
+          height: 96px;
           margin: auto;
         }
       }
@@ -216,7 +229,7 @@ header {
     padding-top: 220px;
 
     .content {
-      width: 648px;
+      max-width: 648px;
       height: 344px;
       background-color: #232323e6;
       padding: 44px 32px;
@@ -241,8 +254,13 @@ header {
   }
 
   .testimonial {
-    height: 280px;
+    min-height: 280px;
     display: flex;
+
+    img {
+      max-width: 50%;
+      object-fit: cover;
+    }
 
     .text {
       padding: 48px 60px;
