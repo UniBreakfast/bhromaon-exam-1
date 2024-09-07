@@ -134,6 +134,30 @@ header {
 
     .text {
       flex-shrink: 99;
+      width: 48%;
+      padding: 66px 0;
+
+      h2 {
+        font-size: 36px;
+        line-height: 40px;
+        font-weight: normal;
+        margin-bottom: 24px;
+      }
+
+      p {
+        font-family: "Josefin Sans", sans-serif;
+        line-height: 28px;
+        font-weight: 300;
+        margin-bottom: 26px;
+      }
+
+      button {
+        margin-top: 32px;
+        background-color: var(--accent);
+        text-transform: uppercase;
+        display: block;
+        padding: 20px 32px;
+      }
     }
 
     .images {
