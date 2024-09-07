@@ -1,6 +1,7 @@
 :root {
   --accent: #5373fd;
   --accent-dark: #486bfe;
+  --trans: 350ms ease-in-out;
 }
 
 body {
@@ -82,6 +83,11 @@ header {
         padding: 16px 24px;
         display: flex;
         gap: 12px;
+        transition: var(--trans);
+
+        &:hover {
+          padding: 16px 30px;
+        }
 
         span {
           font-size: 14px;
@@ -117,6 +123,17 @@ header {
       menu {
         display: flex;
         gap: 40px;
+        font-size: 14px;
+        line-height: 20px;
+        text-transform: uppercase;
+
+        li {
+          transition: var(--trans);
+
+          &:hover {
+            translate: 0 -3px;
+          }
+        }
       }
     }
   }
@@ -161,6 +178,11 @@ header {
         text-transform: uppercase;
         display: block;
         padding: 20px 32px;
+        transition: var(--trans);
+
+        &:hover {
+          padding: 20px 40px;
+        }
       }
     }
 
@@ -190,7 +212,7 @@ header {
     .container {
       height: 100%;
     }
-    
+
     .features {
       height: 100%;
       display: flex;
@@ -242,6 +264,11 @@ header {
       background-color: #232323e6;
       padding: 44px 32px;
       font-family: "Josefin Sans", sans-serif;
+      transition: var(--trans);
+
+      section:hover &:not(:hover) {
+        opacity: 0.1;
+      }
 
       .promo-sea & {
         margin-left: auto;
@@ -273,6 +300,11 @@ header {
         background-color: var(--accent);
         background: linear-gradient(45deg, var(--accent-dark) 42%, var(--accent) 42%);
         text-transform: uppercase;
+        transition: var(--trans);
+
+        &:hover {
+          padding: 20px 64px;
+        }
       }
     }
   }
@@ -354,7 +386,7 @@ footer {
     margin: auto;
 
     path {
-      transition: 350ms;
+      transition: var(--trans);
 
       li:hover & {
         fill: var(--accent);
