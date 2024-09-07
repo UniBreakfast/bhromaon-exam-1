@@ -4,14 +4,18 @@
   --trans: 350ms ease-in-out;
 }
 
-body {
-  font-family: "Aleo", sans-serif;
-  color: #fff;
-
-  .container {
-    width: 1320px;
-    max-width: 90%;
-    margin: 0 auto;
+html {
+  scroll-behavior: smooth;
+  
+  body {
+    font-family: "Aleo", sans-serif;
+    color: #fff;
+  
+    .container {
+      width: 1320px;
+      max-width: 90%;
+      margin: 0 auto;
+    }
   }
 }
 
@@ -37,7 +41,7 @@ header {
           flex-direction: column;
           align-items: center;
           gap: 4px;
-
+          animation: float 1s ease-in-out infinite;
         }
       }
     }
@@ -392,5 +396,19 @@ footer {
         fill: var(--accent);
       }
     }
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
   }
 }
