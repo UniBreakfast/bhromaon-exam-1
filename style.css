@@ -343,5 +343,13 @@ footer {
     justify-content: space-between;
     width: 275px;
     margin: auto;
+
+    path {
+      transition: 350ms;
+
+      li:hover & {
+        fill: var(--accent);
+      }
+    }
   }
 }
