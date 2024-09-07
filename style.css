@@ -1,0 +1,150 @@
+:root {
+  --accent: #5373fd;
+}
+
+body {
+  font-family: "Aleo", sans-serif;
+  color: #fff;
+
+  .container {
+    width: 1320px;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+header {
+  .wrapper:first-child {
+    text-align: center;
+    background-image: url("images/header.png");
+    background-size: cover;
+    height: 864px;
+
+    .container {
+      height: 100%;
+      display: flex;
+
+      .content {
+        height: max-content;
+        width: max-content;
+        margin: auto;
+      }
+    }
+
+    form {
+      background: #fff;
+    }
+  }
+
+  .wrapper:last-child {
+    background-color: var(--accent);
+    height: 84px;
+
+    .container {
+      height: 100%;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      height: 100%;
+      align-items: center;
+
+      menu {
+        display: flex;
+        gap: 40px;
+      }
+    }
+  }
+}
+
+.hero {
+  background-image: url("images/hero.png");
+  background-size: cover;
+  background-position: center;
+
+  .row:first-child {
+    height: 704px;
+    padding: 124px 0;
+    display: flex;
+    justify-content: space-between;
+
+    .text {
+      flex-shrink: 99;
+    }
+    
+    .images {
+      width: 424px;
+      height: 456px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      img {
+        width: 350px;
+        height: 220px;
+
+        &:last-child {
+          align-self: end;
+        }
+      }
+    }
+  }
+
+  .row:last-child {
+    height: 306px;
+
+    .features {
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      li {
+        width: 424px;
+        text-align: center;
+
+        img {
+          margin: auto;
+        }
+      }
+    }
+  }
+}
+
+.promo {
+  height: 684px;
+  background-size: cover;
+  background-position: center;
+
+  &.promo-house {
+    background-image: url("images/box-house.png");
+  }
+
+  &.promo-sea {
+    background-image: url("images/spain.png");
+  }
+}
+
+.testimonials {
+  padding: 60px;
+  background-image: url("images/testimonials.png");
+  background-size: cover;
+  min-height: 680px;
+
+  h2 {
+    text-align: center;
+    height: 40px;
+    margin: 60px 0;
+  }
+
+  .testimonial {
+    height: 280px;
+  }
+}
+
+footer {
+  text-align: center;
+  height: 268px;
+  background-color: #000;
+}
