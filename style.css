@@ -354,6 +354,11 @@ header {
       p {
         font-weight: 300;
         line-height: 28px;
+
+        &::before {
+          content: url("images/vector/quote.svg");
+          margin-right: 8px;
+        }
       }
     }
   }

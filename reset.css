@@ -44,6 +44,6 @@ textarea {
   resize: none;
 }
 
-img, canvas, ::before, ::after {
+img, canvas {
   display: block;
 }
