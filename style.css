@@ -1,5 +1,6 @@
 :root {
   --accent: #5373fd;
+  --accent-dark: #486bfe;
 }
 
 body {
@@ -154,6 +155,7 @@ header {
       button {
         margin-top: 32px;
         background-color: var(--accent);
+        background: linear-gradient(45deg, var(--accent-dark) 42%, var(--accent) 42%);
         text-transform: uppercase;
         display: block;
         padding: 20px 32px;
@@ -263,6 +265,7 @@ header {
       button {
         padding: 20px 56px;
         background-color: var(--accent);
+        background: linear-gradient(45deg, var(--accent-dark) 42%, var(--accent) 42%);
         text-transform: uppercase;
       }
     }
