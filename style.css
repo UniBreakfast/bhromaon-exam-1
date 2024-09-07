@@ -82,7 +82,7 @@ header {
         padding: 16px 24px;
         display: flex;
         gap: 12px;
-        
+
         span {
           font-size: 14px;
           line-height: 20px;
@@ -123,15 +123,17 @@ header {
 }
 
 .hero {
-  background-image: url("images/hero.png");
-  background-size: cover;
-  background-position: center;
-
   .row:first-child {
+    background-image: url("images/hero.png");
+    background-size: cover;
+    background-position: center;
     min-height: 704px;
     padding: 124px 0;
-    display: flex;
-    justify-content: space-between;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
 
     .text {
       flex-shrink: 99;
@@ -185,6 +187,10 @@ header {
     min-height: 306px;
     background-color: #333;
 
+    .container {
+      height: 100%;
+    }
+    
     .features {
       height: 100%;
       display: flex;
@@ -194,7 +200,7 @@ header {
       background-repeat: no-repeat;
       background-position: center 38px;
       background-size: 65%;
-      
+
       li {
         width: 424px;
         text-align: center;
@@ -308,7 +314,7 @@ header {
         line-height: 28px;
         margin-bottom: 10px;
       }
-      
+
       p {
         font-weight: 300;
         line-height: 28px;
